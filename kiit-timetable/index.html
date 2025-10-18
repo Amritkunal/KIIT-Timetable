@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIIT University - Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1>KIIT University</h1>
+                <h2>School of Computer Applications</h2>
+                <p class="subtitle">1st Semester Timetable (Effective from 13-10-2025)</p>
+            </div>
+        </header>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <div class="control-group">
+                <label for="courseSelect" class="form-label">Select Course:</label>
+                <select id="courseSelect" class="form-control">
+                    <option value="">-- Choose a Course --</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="daySelect" class="form-label">Select Day:</label>
+                <select id="daySelect" class="form-control">
+                    <option value="ALL">All Days</option>
+                    <option value="MON">Monday</option>
+                    <option value="TUE">Tuesday</option>
+                    <option value="WED">Wednesday</option>
+                    <option value="THU">Thursday</option>
+                    <option value="FRI">Friday</option>
+                </select>
+            </div>
+
+            <button id="viewSchedule" class="btn btn--primary">View Schedule</button>
+        </div>
+
+        <!-- Current Day Indicator -->
+        <div id="currentDay" class="current-day" style="display: none;">
+            <span id="currentDayText"></span>
+        </div>
+
+        <!-- Timetable Display Section -->
+        <div class="timetable-container">
+            <div id="noSelection" class="no-selection">
+                <div class="no-selection-content">
+                    <h3>Select Course &amp; Day</h3>
+                    <p>Please select a course and day to view the timetable.</p>
+                </div>
+            </div>
+
+            <div id="timetableDisplay" class="timetable" style="display: none;">
+                <div class="timetable-header">
+                    <h3 id="scheduleTitle">Schedule</h3>
+                </div>
+                <div id="scheduleGrid" class="schedule-grid">
+                    <!-- Schedule will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="print-section" style="display: none;" id="printSection">
+            <button id="printSchedule" class="btn btn--secondary">Print Schedule</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 KIIT University - School of Computer Applications</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
