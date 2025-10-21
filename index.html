@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIIT TIME</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Logo Screen -->
+  <div class="logo-screen" id="logoScreen">
+    <div class="logo-container">
+      <div class="logo-icon">K</div>
+      <div class="logo-text">
+        <h1>KIIT TIME</h1>
+        <p>TIME IN YOUR HAND</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div class="main-app" id="mainApp" style="display:none;">
+    <div class="app-header">
+      <div class="back-btn" id="backBtn">←</div>
+      <h2>Select Sections</h2>
+      <button class="done-btn" id="doneBtn">Done</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search sections...">
+    </div>
+
+    <!-- Available Sections -->
+    <div class="sections-container">
+      <h3>Available Sections (Year 1):</h3>
+      <div class="sections-list" id="sectionsList"></div>
+    </div>
+  </div>
+
+  <!-- Timetable View -->
+  <div class="timetable-view" id="timetableView" style="display:none;">
+    <!-- Day Tabs -->
+    <div class="day-tabs-container" id="dayTabs"></div>
+
+    <!-- Classes Container -->
+    <div class="classes-container" id="classesContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
